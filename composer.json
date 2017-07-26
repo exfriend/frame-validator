@@ -1,0 +1,22 @@
+{
+  "name": "exfriend/frame-validator",
+  "description": "Detect whether URL can be embedded in an iframe",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "exfriend",
+      "email": "i@zlad.tk"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Exfriend\\FrameValidator\\": "src/"
+    }
+  },
+  "require": {},
+  "require-dev": {
+    "exfriend/support": "^1.0",
+    "phpunit/phpunit": "^6.2"
+  }
+}
