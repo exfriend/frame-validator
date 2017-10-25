@@ -2,10 +2,7 @@
 
 namespace Exfriend\FrameValidator;
 
-use Exfriend\FrameValidator\Exceptions\
-{
-    TransferException
-};
+use Exfriend\FrameValidator\Exceptions\TransferException;
 
 
 /**
