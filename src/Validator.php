@@ -18,7 +18,7 @@ class Validator
     protected $origin;
 
     public $curl_options = [
-        CURLOPT_TIMEOUT => 25,
+        CURLOPT_TIMEOUT        => 25,
         CURLOPT_CONNECTTIMEOUT => 25,
     ];
 
@@ -89,7 +89,8 @@ class Validator
 
         if ( $ce = curl_error( $ch ) )
         {
-            throw new TransferException( $ce );
+            $headers = implode( PHP_EOL, get_headers( $url ) );
+            //            throw new TransferException( $ce );
         }
 
         curl_close( $ch );
